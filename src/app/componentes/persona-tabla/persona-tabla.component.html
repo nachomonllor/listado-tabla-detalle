@@ -1,0 +1,23 @@
+<table class = "table">
+    <thead class = "thead-dark">
+        <tr>
+            <th scope = "col" >Id</th>
+            <th scope = "col" >Nombre</th>
+            <th scope = "col" >Edad</th>
+            <th scope = "col" >Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let per of listaPersonasTabla" (click)="onSelect(per)">
+            <th scope = "row">{{per.id}}</th>
+            <td scope = "row"> {{per.nombre}}</td>
+            <td scope = "row"> {{per.edad}}</td>
+            
+            <td scope = "row">
+                <img width = "150" [src] = "per.foto">
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+

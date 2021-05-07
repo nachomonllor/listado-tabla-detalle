@@ -1,0 +1,19 @@
+
+<div class = "container">
+    <div class = "row">
+        <div class = "col-4">
+            <app-persona-tabla #personaTabla [listaPersonasTabla] = "listaPer" (personaSelected)="onSelected($event)"  >
+            </app-persona-tabla>
+        </div>
+
+
+        <div class="col-4">
+            <app-persona-detalle    [perDetalle]= "unaPersonaListado">
+            </app-persona-detalle>
+       
+        </div> 
+
+
+    </div>
+     
+</div>
